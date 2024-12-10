@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Test</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <header class="header">
+            <div class="bottom-header_mob d-lg-none">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo search-input_wrap top_header_item">
+                            <a href="#">
+                                <figure class="mb-0">
+                                    <img src="./images/logo.png" alt="logo">
+                                </figure>
+                            </a>
+                        </div>
+                        <button class="btn canvas_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+
+                        </button>
+
+                    </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-header ">
+                <div class="container h-100 d-flex  justify-content-between top-header_wrap align-items-center">
+
+                    <div class="logo search-input_wrap top_header_item d-none d-lg-block">
+                        <a href="#">
+                            <figure class="mb-0">
+                                <img src="./images/logo.png" alt="logo">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- <div class="header-right ml-auto flx-vcenter"> -->
+                    <nav class="main-nav">
+                        <ul class="d-flex align-items-center flex-wrap ">
+                            <li class="search-input_wrap">
+                                <span class="icon-Vector"></span>
+                                <input type="text" placeholder="Search">
+                            </li>
+                            <li class="lang-switch ">
+                                <a href="">
+                                    <span class="icon-globe"></span>
+                                    <span>AR</span>
+                                </a>
+                            </li>
+                            <li class="ticket ">
+                                <a href="#">
+                                    <figure class="mb-0 ticket-img">
+                                        <img src="./images/ticket.png" alt="">
+                                        <span class="ticket-text">TICKETS</span>
+
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="bottom-header d-none d-lg-block ">
+                <div class="container">
+                    <nav class="d-flex justify-content-between">
+                        <ul class="d-flex">
+                            <li>
+                                <a href="#">national Team</a>
+                            </li>
+                            <li>
+                                <a href="#"> Competitions</a>
+                            </li>
+                            <li>
+                                <a href="#"> Football in Qatar</a>
+                            </li>
+                            <li><a href="">Regulations
+                                    <span class="icon-down-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li><a href="">sub item1</a></li>
+                                    <li><a href="">sub item2</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">About us
+                                    <span class="icon-down-arrow"></span>
+                                    <ul>
+                                        <li><a href="">sub item1</a></li>
+                                        <li><a href="">sub item2</a></li>
+
+                                    </ul>
+                                </a>
+                            </li>
+                            <li><a href="">Football development</a></li>
+                            <li><a href="">Media Center
+                                    <span class="icon-down-arrow"></span>
+                                    <ul>
+                                        <li><a href="">sub item1</a></li>
+                                        <li><a href="">sub item2</a></li>
+
+                                    </ul>
+                                </a>
+                            </li>
+                            <li><a href="">Tenders</a></li>
+                            <li><a href="">Referees</a></li>
+
+
+
+
+                        </ul>
+                        <ul class="contact-us d-flex ">
+                            <li>
+                                <a href="">
+                                    <span class="icon-comments align-middle pe-1"></span>
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </header>
+        <section class="banner d-flex align-items-end">
+            <div class="banner_img">
+                <figure class="mb-0 ratio">
+                    <img src="/images/bannerimg.webp" alt="">
+                </figure>
+            </div>
+            <div class="banner_social_icons">
+                <a href="#" class="social_wrap"><span class="icon-instagram"></span></a>
+                <a href="#" class="social_wrap"><span class="icon-youtube"></span></a>
+                <a href="#" class="social_wrap"><span class="icon-facebook"></span></a>
+                <a href="#" class="social_wrap"><span class="icon-x"></span></a>
+            </div>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="banner_contents">
+                            <div class="sub_ttl">
+                                01 - <span>05</span>
+                            </div>
+                            <h1 class="h1">WE ARE<br>
+                                THE <span>CHAMPIONS</span></h1>
+                            <div class="banner_text">
+                                <p class="fs-20">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                                    pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
+                            </div>
+                            <div class="banner_bottom d-flex">
+                                <a href="" class="banner_item d-flex align-items-center">
+                                    <div class="bottom_icon d-flex align-items-center justify-content-center">
+                                        <span class="icon-statitics banner-icon"></span>
+                                    </div>
+                                    <span class="ps-2">Fixtures</span>
+
+                                </a>
+                                <a href="" class="banner_item d-flex align-items-center">
+                                    <div class="bottom_icon d-flex align-items-center justify-content-center">
+                                        <span class="icon-play banner-icon"></span>
+                                    </div>
+                                    <span class="ps-2">Fixtures</span>
+
+                                </a>
+                                <a href="" class="banner_item d-flex align-items-center">
+                                    <div class="bottom_icon d-flex align-items-center justify-content-center">
+                                        <span class="icon-spire banner-icon"></span>
+                                    </div>
+                                    <span class="ps-2">Fixtures</span>
+
+                                </a>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- marqueee -->
+        <marquee class="marquee">
+            <div class="d-flex marquee_wrap ">
+                <figure>
+                    <img src="./images/marquee-img1.png" alt="">
+                    <span class="ps-2">FOOTBALL IN QATAR</span>
+                </figure>
+                <figure>
+                    <img src="./images/marquee-img-2.png" alt="">
+                    <span class="ps-2">FOOTBALL IN QATAR</span>
+
+                </figure>
+                <figure>
+                    <img src="./images/marquee-img-3.png" alt="">
+                    <span class="ps-2">FOOTBALL IN QATAR</span>
+
+                </figure>
+                <figure>
+                    <img src="./images/marquee-img-4.png" alt="">
+                    <span class="ps-2">FOOTBALL IN QATAR</span>
+
+                </figure>
+            </div>
+        </marquee>
+        <!-- live match -->
+        <section class="live-matches section-120">
+
+            <div class="container">
+                <h2 class="h2 stroke-text"> LIVE <span>MATCHES</span></h2>
+                <div class="tab_area">
+                    <ul class="nav nav-tabs live-matches_tab" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="national-tab" data-bs-toggle="tab"
+                                data-bs-target="#national" type="button" role="tab" aria-controls="national"
+                                aria-selected="true">National Team</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other"
+                                type="button" role="tab" aria-controls="other" aria-selected="false">Other Team</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="national" role="tabpanel"
+                            aria-labelledby="national-tab">
+                            <div class="swiper-area">
+                                <div class="swiper-button-next swiper-1-next"></div>
+                                <div class="swiper-button-prev swiper-1-prev"></div>
+
+                                <div class="swiper matchSwiper">
+
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="match-card-outer">
+                                                <div class="match-card">
+                                                    <div class="match-card_top">
+                                                        <div class="card_date">
+                                                            <span class="icon-calender"></span>
+                                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                                        </div>
+                                                        <div class="card_img_wrap d-flex align-items-center">
+                                                            <div class="img_item d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                                            </div>
+                                                            <div
+                                                                class="vs d-flex align-items-center justify-content-center">
+                                                                <span>VS</span>
+                                                            </div>
+                                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/duhail.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-card_bottom d-flex justify-content-center">
+                                                        <span>10</span>
+                                                        <span class="colon">:</span>
+                                                        <span>10</span>
+                                                        <span>PM</span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="ticket ">
+                                                    <a href="#">
+                                                        <figure class="mb-0 ticket-img">
+                                                            <img src="./images/ticket.png" alt="">
+                                                            <span class="ticket-text">TICKETS</span>
+
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="match-card-outer">
+                                                <div class="match-card">
+                                                    <div class="match-card_top">
+                                                        <div class="card_date">
+                                                            <span class="icon-calender"></span>
+                                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                                        </div>
+                                                        <div class="card_img_wrap d-flex align-items-center">
+                                                            <div class="img_item d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                                            </div>
+                                                            <div
+                                                                class="vs d-flex align-items-center justify-content-center">
+                                                                <span>VS</span>
+                                                            </div>
+                                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/duhail.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-card_bottom d-flex justify-content-center">
+                                                        <span>10</span>
+                                                        <span class="colon">:</span>
+                                                        <span>10</span>
+                                                        <span>PM</span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="ticket ">
+                                                    <a href="#">
+                                                        <figure class="mb-0 ticket-img">
+                                                            <img src="./images/ticket.png" alt="">
+                                                            <span class="ticket-text">TICKETS</span>
+
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="match-card-outer">
+                                                <div class="match-card">
+                                                    <div class="match-card_top">
+                                                        <div class="card_date">
+                                                            <span class="icon-calender"></span>
+                                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                                        </div>
+                                                        <div class="card_img_wrap d-flex align-items-center">
+                                                            <div class="img_item d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                                            </div>
+                                                            <div
+                                                                class="vs d-flex align-items-center justify-content-center">
+                                                                <span>VS</span>
+                                                            </div>
+                                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/duhail.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-card_bottom d-flex justify-content-center">
+                                                        <span>10</span>
+                                                        <span class="colon">:</span>
+                                                        <span>10</span>
+                                                        <span>PM</span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="ticket ">
+                                                    <a href="#">
+                                                        <figure class="mb-0 ticket-img">
+                                                            <img src="./images/ticket.png" alt="">
+                                                            <span class="ticket-text">TICKETS</span>
+
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+
+
+                                            <div class="match-card-outer">
+                                                <div class="match-card">
+                                                    <div class="match-card_top">
+                                                        <div class="card_date">
+                                                            <span class="icon-calender"></span>
+                                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                                        </div>
+                                                        <div class="card_img_wrap d-flex align-items-center">
+                                                            <div class="img_item d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                                            </div>
+                                                            <div
+                                                                class="vs d-flex align-items-center justify-content-center">
+                                                                <span>VS</span>
+                                                            </div>
+                                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/duhail.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-card_bottom d-flex justify-content-center">
+                                                        <span>10</span>
+                                                        <span class="colon">:</span>
+                                                        <span>10</span>
+                                                        <span>PM</span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="ticket ">
+                                                    <a href="#">
+                                                        <figure class="mb-0 ticket-img">
+                                                            <img src="./images/ticket.png" alt="">
+                                                            <span class="ticket-text">TICKETS</span>
+
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="match-card-outer">
+                                                <div class="match-card">
+                                                    <div class="match-card_top">
+                                                        <div class="card_date">
+                                                            <span class="icon-calender"></span>
+                                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                                        </div>
+                                                        <div class="card_img_wrap d-flex align-items-center">
+                                                            <div class="img_item d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                                            </div>
+                                                            <div
+                                                                class="vs d-flex align-items-center justify-content-center">
+                                                                <span>VS</span>
+                                                            </div>
+                                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                                <figure class="mb-0 ">
+                                                                    <img src="./images/duhail.png" alt="">
+                                                                </figure>
+                                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-card_bottom d-flex justify-content-center">
+                                                        <span>10</span>
+                                                        <span class="colon">:</span>
+                                                        <span>10</span>
+                                                        <span>PM</span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="ticket ">
+                                                    <a href="#">
+                                                        <figure class="mb-0 ticket-img">
+                                                            <img src="./images/ticket.png" alt="">
+                                                            <span class="ticket-text">TICKETS</span>
+
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">...</div>
+
+                    </div>
+                </div>
+
+        </section>
+        <!-- news updates -->
+        <section class="news-updates">
+
+            <div class="container">
+                <nav aria-label="breadcrumb mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item fs-18">/ NEWS & UPDATES</li>
+                    </ol>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <h2 class="h2 stroke-text mb-0"> LATEST <span class="d-lg-block">NEWS & UPDATES</span></h2>
+
+                    </div>
+                    <div class="col-md-5 top_desc pt-lg-3">
+                        <p class="mb-0 fs-20">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                            pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <a href="" class="viewall pt-lg-3">View all</a>
+
+                    </div>
+
+                </div>
+                <div class="swiper-area-news">
+                    <div class="swiper-button-next swiper-2-next"></div>
+                    <div class="swiper-button-prev swiper-2-prev"></div>
+                    <div class="swiper newsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news-card">
+                                    <div class="news-card_img">
+                                        <figure class="ratio">
+                                            <img src="/images/card-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="news-card_data">
+                                        <div class="news-card_date mb-2">
+                                            <span class="icon-calender"></span>
+                                            <span class="ps-2">Saturday, May 12th</span>
+                                        </div>
+                                        <h4 class="news-card_ttl fs-32">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                                            Finals, Seals Group F Top Spot </h4>
+                                        <div class="btn_wrap d-flex">
+                                            <a href="">REFEREES</a>
+                                            <a href="">Football Development</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-card">
+                                    <div class="news-card_img">
+                                        <figure class="ratio">
+                                            <img src="/images/card-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="news-card_data">
+                                        <div class="news-card_date mb-2">
+                                            <span class="icon-calender"></span>
+                                            <span class="ps-2">Saturday, May 12th</span>
+                                        </div>
+                                        <h4 class="news-card_ttl fs-32">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                                            Finals, Seals Group F Top Spot </h4>
+                                        <div class="btn_wrap d-flex">
+                                            <a href="">REFEREES</a>
+                                            <a href="">Football Development</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-card">
+                                    <div class="news-card_img">
+                                        <figure class="ratio">
+                                            <img src="/images/card-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="news-card_data mb-2">
+                                        <div class="news-card_date mb-2">
+                                            <span class="icon-calender"></span>
+                                            <span class="ps-2">Saturday, May 12th</span>
+                                        </div>
+                                        <h4 class="news-card_ttl fs-32">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                                            Finals, Seals Group F Top Spot </h4>
+                                        <div class="btn_wrap d-flex">
+                                            <a href="">REFEREES</a>
+                                            <a href="">Football Development</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-card">
+                                    <div class="news-card_img">
+                                        <figure class="ratio">
+                                            <img src="/images/card-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="news-card_data">
+                                        <div class="news-card_date mb-2">
+                                            <span class="icon-calender"></span>
+                                            <span class="ps-2">Saturday, May 12th</span>
+                                        </div>
+                                        <h4 class="news-card_ttl fs-32">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                                            Finals, Seals Group F Top Spot </h4>
+                                        <div class="btn_wrap d-flex">
+                                            <a href="">REFEREES</a>
+                                            <a href="">Football Development</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- Football in Qatar -->
+        <section class="football-qatar">
+            <div class="container">
+                <div class="row align-items-center wrap_qatar">
+                    <div class="col-md-6">
+                        <nav aria-label="breadcrumb mb-5">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item fs-18">/ WHAT WE ARE</li>
+                            </ol>
+                        </nav>
+                        <div class="football-qatar-left">
+                            <h4 class="h2 stroke-text mb-0 "> FOOTBALL <span>IN QATAR</span></h4>
+                            <p class="fs-20">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non </p>
+                            <div class="btn_wrap">
+                                <a href="" class="fs-18 ">
+                                    <span class="pe-3">KNOW MORE</span>
+                                    <span>
+                                        <img src="./images/arrowbtn.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wrap d-md-flex football-qatar-right">
+                            <figure class="book mb-0">
+                                <img src="./images/book.png" alt="">
+                            </figure>
+                            <div class="text_data">
+                                <h4 class="ttl mb-2">RULES & REGULATIONS</h4>
+                                <p class="mb-2 fs-20">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non </p>
+                                <a href="">LEARN MORE</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- football ranking -->
+        <section class="section-120 football-ranking">
+            <div class="container ">
+                <div class="football-ranking_wrap">
+                    <nav aria-label="breadcrumb mb-5">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item fs-18">/ WHAT WE ARE</li>
+                        </ol>
+                    </nav>
+                    <h4 class="h2 stroke-text mb-0 "> FOOTBALL <span>IN QATAR</span></h4>
+                    <div class="football-ranking_tab">
+                        <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-fifa-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-fifa" type="button" role="tab" aria-controls="pills-fifa"
+                                    aria-selected="true">FIFA WORLD RANKING</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-asian-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-asian" type="button" role="tab" aria-controls="pills-asian"
+                                    aria-selected="false">ASIAN TEAMS RANKING</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-oreedo-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-oreedo" type="button" role="tab" aria-controls="pills-oreedo"
+                                    aria-selected="false">Ooredoo Stars League</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-fifa" role="tabpanel"
+                                aria-labelledby="pills-fifa-tab">
+                                <div class="tab-content_wrap">
+                                    <div class="tab-content_top d-flex">
+                                        <div class="col top-item fs-20">POSITION</div>
+                                        <div class="col top-item fs-20">TEAM</div>
+                                        <div class="col top-item fs-20">POINTS</div>
+                                        <div class="col top-item fs-20">PREVIOUS POINTS</div>
+                                        <div class="col top-item fs-20">RECENT MATCHES RESULTS</div>
+
+                                    </div>
+                                    <div class="tab-content_bottom ">
+                                        <div class="ranking-card d-flex align-items-center">
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/argentina.png" alt="">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <div class="score ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ranking-card d-flex align-items-center">
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/france.png" alt="">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <div class="score ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ranking-card d-flex align-items-center">
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/spain.png" alt="">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <div class="score ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ranking-card d-flex align-items-center">
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/england.png" alt="">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <div class="score ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ranking-card d-flex align-items-center">
+
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/brazil.png" alt="">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <div class="score ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-asian" role="tabpanel"
+                                aria-labelledby="pills-asian-tab">
+                                <div class="tab-content_wrap">
+                                    <div class="tab-content_top d-flex">
+                                        <div class="col top-item fs-20">POSITION</div>
+                                        <div class="col top-item fs-20">TEAM</div>
+                                        <div class="col top-item fs-20">POINTS</div>
+                                        <div class="col top-item fs-20">PREVIOUS POINTS</div>
+                                        <div class="col top-item fs-20">RECENT MATCHES RESULTS</div>
+
+                                    </div>
+                                    <div class="tab-content_bottom">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-oreedo" role="tabpanel"
+                                aria-labelledby="pills-oreedo-tab">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit. Numquam doloremque accusamus quod voluptates saepe officiis rem vitae repellendus
+                                maiores eum possimus distinctio optio iure consectetur, maxime totam aut ab natus?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="twitter-feeds">
+            <div class="container">
+                <nav aria-label="breadcrumb mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item fs-18">/ TWITTER FEEDS</li>
+                    </ol>
+                </nav>
+                <div class="swiper-area">
+                    <div class="swiper-button-next swiper-3-next"></div>
+                    <div class="swiper-button-prev swiper-3-prev"></div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter1.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter2.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20 "> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter3.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter1.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter2.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter3.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="twitter-card">
+                                    <div class="twitter-card_img">
+                                        <figure class="mb-4 ratio">
+                                            <img src="./images/twitter1.png" alt="">
+                                            <div class="twitter">
+                                                <span class="icon-x"></span>
+
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                    <div class="twitter-card_text">
+                                        <p class="ashtags fs-20"> <span>#AlAnnabi</span>#AlAnnabi is ready for
+                                            tomorrow’s
+                                            match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
+                                        <div class="time fs-18">1 Aug 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="media">
+            <div class="container">
+                <nav aria-label="breadcrumb mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item fs-18">/ MEDIA</li>
+                    </ol>
+                </nav>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h4 class="h2 stroke-text mb-0 "> IMAGES <span> VIDEOS</span></h4>
+                    <a href="" class="viewall">View all</a>
+                </div>
+                <div class="media_wrap d-flex">
+                    <figure class="mb-0">
+                        <img src="./images/1.png" alt="">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/2.png" alt="">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/3.png" alt="">
+                        <img src="./images/4.png" alt="">
+
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/26.png" alt="">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/14.png" alt="">
+                    </figure>
+                    
+                </div>
+                <div class="media_wrap d-flex">
+
+                <figure class="mb-0">
+                    <img src="./images/7.png" alt="">
+                </figure>
+                <figure class="mb-0">
+                    <img src="./images/8.png" alt="">
+                </figure>
+                <figure class="mb-0">
+                    <img src="./images/9.png" alt="">
+
+                </figure>
+                <figure class="mb-0">
+                    <img src="./images/1o.png" alt="">
+                </figure>
+                <figure class="mb-0">
+                    <img src="./images/12.png" alt="">
+                    <img src="./images/13.png" alt="">
+
+                </figure>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

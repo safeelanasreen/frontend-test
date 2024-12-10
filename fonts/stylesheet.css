@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'ClanOT-NarrowBold';
+    src: url('ClanOT-NarrowBold.woff2') format('woff2'),
+        url('ClanOT-NarrowBold.woff') format('woff'),
+        url('ClanOT-NarrowBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowBlack';
+    src: url('ClanOT-NarrowBlack.woff2') format('woff2'),
+        url('ClanOT-NarrowBlack.woff') format('woff'),
+        url('ClanOT-NarrowBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowBook';
+    src: url('ClanOT-NarrowBook.woff2') format('woff2'),
+        url('ClanOT-NarrowBook.woff') format('woff'),
+        url('ClanOT-NarrowBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowNews';
+    src: url('ClanOT-NarrowNews.woff2') format('woff2'),
+        url('ClanOT-NarrowNews.woff') format('woff'),
+        url('ClanOT-NarrowNews.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowMedium';
+    src: url('ClanOT-NarrowMedium.woff2') format('woff2'),
+        url('ClanOT-NarrowMedium.woff') format('woff'),
+        url('ClanOT-NarrowMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowUltra';
+    src: url('ClanOT-NarrowUltra.woff2') format('woff2'),
+        url('ClanOT-NarrowUltra.woff') format('woff'),
+        url('ClanOT-NarrowUltra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClanOT-NarrowThin';
+    src: url('ClanOT-NarrowThin.woff2') format('woff2'),
+        url('ClanOT-NarrowThin.woff') format('woff'),
+        url('ClanOT-NarrowThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

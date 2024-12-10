@@ -1,0 +1,34 @@
+@mixin aspectRatio($height, $width) {
+    padding-top: calc((#{$height}/#{$width})*100%);
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+    }
+  }
+  @mixin min($breakpoint, $property: width) {
+    @media screen and (min-#{$property}: #{$breakpoint}px) {
+      @content;
+    }
+  }
+  
+  @mixin max($breakpoint, $property: width) {
+    @media screen and (max-#{$property}: #{$breakpoint}px) {
+      @content;
+    }
+  }
+  
+  @mixin min-max($bp-min, $bp-max, $prop-min: width, $prop-max: $prop-min) {
+    @media screen and (min-#{$prop-min}: #{$bp-min}px) and (max-#{$prop-max}: #{$bp-max}px) {
+      @content;
+    }
+  }
+  $base-size: 16;
+
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
