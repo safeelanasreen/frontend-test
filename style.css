@@ -822,6 +822,15 @@ ul li {
   font-size: 17px;
   color: #001D29;
   font-family: "ClanOT-NarrowBold";
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media screen and (max-width: 578px) {
+  .news-card .btn_wrap a {
+    line-height: 2;
+  }
 }
 @media screen and (min-width: 1200px) {
   .news-card:hover figure img {
@@ -913,6 +922,13 @@ ul li {
 
 .football-ranking .nav-pills {
   row-gap: 8px;
+}
+@media screen and (max-width: 576px) {
+  .football-ranking .nav-pills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .football-ranking .container {
   background-image: url(./images/bg2.webp);

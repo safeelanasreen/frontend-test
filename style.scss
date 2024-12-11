@@ -515,6 +515,13 @@
             font-size: 17px;
             color: #001D29;
             font-family: $font-family-bold;
+            display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  @include max(578){
+    line-height: 2;
+  }
 
         }
     }
@@ -615,6 +622,9 @@
 .football-ranking{
     .nav-pills{
         row-gap: 8px;
+        @include max(576){
+            justify-content: center;
+        }
     }
     .container{
         background-image: url(./images/bg2.webp);
