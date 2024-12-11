@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./icomoon/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,12 +43,62 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
-                            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                            
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            ...
+                            <nav >
+                                <ul >
+                                    <li>
+                                        <a href="#">national Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Competitions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Football in Qatar</a>
+                                    </li>
+                                    <li><a href="">Regulations
+                                        </a>
+                                        <ul>
+                                            <li><a href="">sub item1</a></li>
+                                            <li><a href="">sub item2</a></li>
+        
+                                        </ul>
+                                    </li>
+                                    <li><a href="">About us
+                                            <ul>
+                                                <li><a href="">sub item1</a></li>
+                                                <li><a href="">sub item2</a></li>
+        
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li><a href="">Football development</a></li>
+                                    <li><a href="">Media Center
+                                            <ul>
+                                                <li><a href="">sub item1</a></li>
+                                                <li><a href="">sub item2</a></li>
+        
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li><a href="">Tenders</a></li>
+                                    <li><a href="">Referees</a></li>
+        
+                                </ul>
+                                <ul class="mt-3">
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-comments align-middle pe-1"></span>
+                                            <span>Contact Us</span>
+                                        </a>
+                                    </li>
+        
+        
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -70,16 +121,16 @@
                                 <span class="icon-Vector"></span>
                                 <input type="text" placeholder="Search">
                             </li>
-                            <li class="lang-switch ">
-                                <a href="">
+                            <li class="lang-switch" id="langSwitcher">
+                                <a href="javascript:void(0);">
                                     <span class="icon-globe"></span>
-                                    <span>AR</span>
+                                    <span id="langText">AR</span>
                                 </a>
                             </li>
                             <li class="ticket ">
                                 <a href="#">
                                     <figure class="mb-0 ticket-img">
-                                        <img src="./images/ticket.png" alt="">
+                                        <img src="./images/ticket.png" alt="img">
                                         <span class="ticket-text">TICKETS</span>
 
                                     </figure>
@@ -135,9 +186,6 @@
                             <li><a href="">Tenders</a></li>
                             <li><a href="">Referees</a></li>
 
-
-
-
                         </ul>
                         <ul class="contact-us d-flex ">
                             <li>
@@ -158,7 +206,7 @@
         <section class="banner d-flex align-items-end">
             <div class="banner_img">
                 <figure class="mb-0 ratio">
-                    <img src="/images/bannerimg.webp" alt="">
+                    <img src="/images/bannerimg.webp" alt="img">
                 </figure>
             </div>
             <div class="banner_social_icons">
@@ -182,21 +230,21 @@
                                     pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
                             </div>
                             <div class="banner_bottom d-flex">
-                                <a href="" class="banner_item d-flex align-items-center">
-                                    <div class="bottom_icon d-flex align-items-center justify-content-center">
-                                        <span class="icon-statitics banner-icon"></span>
+                                <a href="#" class="banner_item d-flex align-items-center">
+                                    <div class="bottom_icon d-flex align-items-center justify-content-center ">
+                                        <span class="icon-statitics banner-icon play_icon"></span>
                                     </div>
                                     <span class="ps-2">Fixtures</span>
 
                                 </a>
-                                <a href="" class="banner_item d-flex align-items-center">
+                                <a href="#" class="banner_item d-flex align-items-center">
                                     <div class="bottom_icon d-flex align-items-center justify-content-center">
                                         <span class="icon-play banner-icon"></span>
                                     </div>
                                     <span class="ps-2">Fixtures</span>
 
                                 </a>
-                                <a href="" class="banner_item d-flex align-items-center">
+                                <a href="#" class="banner_item d-flex align-items-center">
                                     <div class="bottom_icon d-flex align-items-center justify-content-center">
                                         <span class="icon-spire banner-icon"></span>
                                     </div>
@@ -221,21 +269,21 @@
         <marquee class="marquee">
             <div class="d-flex marquee_wrap ">
                 <figure>
-                    <img src="./images/marquee-img1.png" alt="">
+                    <img src="./images/marquee-img1.png" alt="img">
                     <span class="ps-2">FOOTBALL IN QATAR</span>
                 </figure>
                 <figure>
-                    <img src="./images/marquee-img-2.png" alt="">
-                    <span class="ps-2">FOOTBALL IN QATAR</span>
-
-                </figure>
-                <figure>
-                    <img src="./images/marquee-img-3.png" alt="">
+                    <img src="./images/marquee-img-2.png" alt="img">
                     <span class="ps-2">FOOTBALL IN QATAR</span>
 
                 </figure>
                 <figure>
-                    <img src="./images/marquee-img-4.png" alt="">
+                    <img src="./images/marquee-img-3.png" alt="img">
+                    <span class="ps-2">FOOTBALL IN QATAR</span>
+
+                </figure>
+                <figure>
+                    <img src="./images/marquee-img-4.png" alt="img">
                     <span class="ps-2">FOOTBALL IN QATAR</span>
 
                 </figure>
@@ -281,7 +329,7 @@
                                                         <div class="card_img_wrap d-flex align-items-center">
                                                             <div class="img_item d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                    <img src="./images/ummusalal.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Umm Salal SC</h3>
                                                             </div>
@@ -291,7 +339,7 @@
                                                             </div>
                                                             <div class="img_ite d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/duhail.png" alt="">
+                                                                    <img src="./images/duhail.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Al-Duhail SC</h3>
                                                             </div>
@@ -310,7 +358,7 @@
                                                 <div class="ticket ">
                                                     <a href="#">
                                                         <figure class="mb-0 ticket-img">
-                                                            <img src="./images/ticket.png" alt="">
+                                                            <img src="./images/ticket.png" alt="img">
                                                             <span class="ticket-text">TICKETS</span>
 
                                                         </figure>
@@ -330,7 +378,7 @@
                                                         <div class="card_img_wrap d-flex align-items-center">
                                                             <div class="img_item d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                    <img src="./images/ummusalal.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Umm Salal SC</h3>
                                                             </div>
@@ -340,7 +388,7 @@
                                                             </div>
                                                             <div class="img_ite d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/duhail.png" alt="">
+                                                                    <img src="./images/duhail.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Al-Duhail SC</h3>
                                                             </div>
@@ -359,7 +407,7 @@
                                                 <div class="ticket ">
                                                     <a href="#">
                                                         <figure class="mb-0 ticket-img">
-                                                            <img src="./images/ticket.png" alt="">
+                                                            <img src="./images/ticket.png" alt="img">
                                                             <span class="ticket-text">TICKETS</span>
 
                                                         </figure>
@@ -379,7 +427,7 @@
                                                         <div class="card_img_wrap d-flex align-items-center">
                                                             <div class="img_item d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                    <img src="./images/ummusalal.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Umm Salal SC</h3>
                                                             </div>
@@ -389,7 +437,7 @@
                                                             </div>
                                                             <div class="img_ite d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/duhail.png" alt="">
+                                                                    <img src="./images/duhail.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Al-Duhail SC</h3>
                                                             </div>
@@ -408,7 +456,7 @@
                                                 <div class="ticket ">
                                                     <a href="#">
                                                         <figure class="mb-0 ticket-img">
-                                                            <img src="./images/ticket.png" alt="">
+                                                            <img src="./images/ticket.png" alt="img">
                                                             <span class="ticket-text">TICKETS</span>
 
                                                         </figure>
@@ -430,7 +478,7 @@
                                                         <div class="card_img_wrap d-flex align-items-center">
                                                             <div class="img_item d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                    <img src="./images/ummusalal.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Umm Salal SC</h3>
                                                             </div>
@@ -440,7 +488,7 @@
                                                             </div>
                                                             <div class="img_ite d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/duhail.png" alt="">
+                                                                    <img src="./images/duhail.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Al-Duhail SC</h3>
                                                             </div>
@@ -459,7 +507,7 @@
                                                 <div class="ticket ">
                                                     <a href="#">
                                                         <figure class="mb-0 ticket-img">
-                                                            <img src="./images/ticket.png" alt="">
+                                                            <img src="./images/ticket.png" alt="img">
                                                             <span class="ticket-text">TICKETS</span>
 
                                                         </figure>
@@ -481,7 +529,7 @@
                                                         <div class="card_img_wrap d-flex align-items-center">
                                                             <div class="img_item d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/ummusalal.png" alt="">
+                                                                    <img src="./images/ummusalal.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Umm Salal SC</h3>
                                                             </div>
@@ -491,7 +539,7 @@
                                                             </div>
                                                             <div class="img_ite d-flex align-items-center flex-column">
                                                                 <figure class="mb-0 ">
-                                                                    <img src="./images/duhail.png" alt="">
+                                                                    <img src="./images/duhail.png" alt="img">
                                                                 </figure>
                                                                 <h3 class="card_ttl">Al-Duhail SC</h3>
                                                             </div>
@@ -510,7 +558,7 @@
                                                 <div class="ticket ">
                                                     <a href="#">
                                                         <figure class="mb-0 ticket-img">
-                                                            <img src="./images/ticket.png" alt="">
+                                                            <img src="./images/ticket.png" alt="img">
                                                             <span class="ticket-text">TICKETS</span>
 
                                                         </figure>
@@ -532,9 +580,48 @@
 
 
                         </div>
-                        <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">...</div>
+                        <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                            <div class="swiper-area"></div>
+                            <div class="match-card-outer ">
+                                <div class="match-card">
+                                    <div class="match-card_top">
+                                        <div class="card_date">
+                                            <span class="icon-calender"></span>
+                                            <span class="ps-2">Saturday, May 12th</span>
+
+                                        </div>
+                                        <div class="card_img_wrap d-flex align-items-center">
+                                            <div class="img_item d-flex align-items-center flex-column">
+                                                <figure class="mb-0 ">
+                                                    <img src="./images/ummusalal.png" alt="img">
+                                                </figure>
+                                                <h3 class="card_ttl">Umm Salal SC</h3>
+                                            </div>
+                                            <div
+                                                class="vs d-flex align-items-center justify-content-center">
+                                                <span>VS</span>
+                                            </div>
+                                            <div class="img_ite d-flex align-items-center flex-column">
+                                                <figure class="mb-0 ">
+                                                    <img src="./images/duhail.png" alt="img">
+                                                </figure>
+                                                <h3 class="card_ttl">Al-Duhail SC</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="match-card_bottom d-flex justify-content-center">
+                                        <span>10</span>
+                                        <span class="colon">:</span>
+                                        <span>10</span>
+                                        <span>PM</span>
+
+
+                                    </div>
+                        </div>
 
                     </div>
+                    
                 </div>
 
         </section>
@@ -557,7 +644,7 @@
                             pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
                     </div>
                     <div class="col-md-2 ">
-                        <a href="" class="viewall pt-lg-3">View all</a>
+                        <a href="#" class="viewall pt-lg-3">View all</a>
 
                     </div>
 
@@ -571,7 +658,7 @@
                                 <div class="news-card">
                                     <div class="news-card_img">
                                         <figure class="ratio">
-                                            <img src="/images/card-1.png" alt="">
+                                            <img src="/images/card-1.png" alt="img">
                                         </figure>
                                     </div>
                                     <div class="news-card_data">
@@ -593,7 +680,7 @@
                                 <div class="news-card">
                                     <div class="news-card_img">
                                         <figure class="ratio">
-                                            <img src="/images/card-1.png" alt="">
+                                            <img src="/images/card-1.png" alt="img">
                                         </figure>
                                     </div>
                                     <div class="news-card_data">
@@ -615,7 +702,7 @@
                                 <div class="news-card">
                                     <div class="news-card_img">
                                         <figure class="ratio">
-                                            <img src="/images/card-1.png" alt="">
+                                            <img src="/images/card-1.png" alt="img">
                                         </figure>
                                     </div>
                                     <div class="news-card_data mb-2">
@@ -637,7 +724,7 @@
                                 <div class="news-card">
                                     <div class="news-card_img">
                                         <figure class="ratio">
-                                            <img src="/images/card-1.png" alt="">
+                                            <img src="/images/card-1.png" alt="img">
                                         </figure>
                                     </div>
                                     <div class="news-card_data">
@@ -679,10 +766,10 @@
                             <h4 class="h2 stroke-text mb-0 "> FOOTBALL <span>IN QATAR</span></h4>
                             <p class="fs-20">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non </p>
                             <div class="btn_wrap">
-                                <a href="" class="fs-18 ">
+                                <a href="#" class="fs-18 ">
                                     <span class="pe-3">KNOW MORE</span>
                                     <span>
-                                        <img src="./images/arrowbtn.png" alt="">
+                                        <img src="./images/arrowbtn.png" alt="img">
                                     </span>
                                 </a>
                             </div>
@@ -691,7 +778,7 @@
                     <div class="col-md-6">
                         <div class="wrap d-md-flex football-qatar-right">
                             <figure class="book mb-0">
-                                <img src="./images/book.png" alt="">
+                                <img src="./images/book.png" alt="img">
                             </figure>
                             <div class="text_data">
                                 <h4 class="ttl mb-2">RULES & REGULATIONS</h4>
@@ -753,7 +840,7 @@
                                             <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
                                             <div class="country ranking-card_item d-flex align-items-center">
                                                 <figure class="mb-0">
-                                                    <img src="./images/argentina.png" alt="">
+                                                    <img src="./images/argentina.png" alt="img">
                                                 </figure>
                                                 <h5 class="rank-card_item mb-0">Argentina</h5>
                                                 <div class="score ranking-card_item">+3</div>
@@ -772,9 +859,28 @@
                                             <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
                                             <div class="country ranking-card_item d-flex align-items-center">
                                                 <figure class="mb-0">
-                                                    <img src="./images/france.png" alt="">
+                                                    <img src="./images/france.png" alt="img">
                                                 </figure>
-                                                <h5 class="rank-card_item mb-0">Argentina</h5>
+                                                <h5 class="rank-card_item mb-0">France</h5>
+                                                <div class="score negative ranking-card_item">+3</div>
+                                            </div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="points ranking-card_item"><span>1883.5</span></div>
+                                            <div class="result ranking-card_item d-flex">
+                                                <div class="item"><span>W</span></div>
+                                                <div class="item"><span>L</span></div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ranking-card d-flex align-items-center">
+                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
+                                            <div class="country ranking-card_item d-flex align-items-center">
+                                                <figure class="mb-0">
+                                                    <img src="./images/spain.png" alt="img">
+                                                </figure>
+                                                <h5 class="rank-card_item mb-0">Spain</h5>
                                                 <div class="score ranking-card_item">+3</div>
                                             </div>
                                             <div class="points ranking-card_item"><span>1883.5</span></div>
@@ -791,29 +897,10 @@
                                             <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
                                             <div class="country ranking-card_item d-flex align-items-center">
                                                 <figure class="mb-0">
-                                                    <img src="./images/spain.png" alt="">
+                                                    <img src="./images/england.png" alt="img">
                                                 </figure>
-                                                <h5 class="rank-card_item mb-0">Argentina</h5>
-                                                <div class="score ranking-card_item">+3</div>
-                                            </div>
-                                            <div class="points ranking-card_item"><span>1883.5</span></div>
-                                            <div class="points ranking-card_item"><span>1883.5</span></div>
-                                            <div class="result ranking-card_item d-flex">
-                                                <div class="item"><span>W</span></div>
-                                                <div class="item"><span>L</span></div>
-
-                                            </div>
-
-
-                                        </div>
-                                        <div class="ranking-card d-flex align-items-center">
-                                            <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
-                                            <div class="country ranking-card_item d-flex align-items-center">
-                                                <figure class="mb-0">
-                                                    <img src="./images/england.png" alt="">
-                                                </figure>
-                                                <h5 class="rank-card_item mb-0">Argentina</h5>
-                                                <div class="score ranking-card_item">+3</div>
+                                                <h5 class="rank-card_item mb-0 ">England</h5>
+                                                <div class="score ranking-card_item negative">+3</div>
                                             </div>
                                             <div class="points ranking-card_item"><span>1883.5</span></div>
                                             <div class="points ranking-card_item"><span>1883.5</span></div>
@@ -830,10 +917,10 @@
                                             <h5 class="card-no ranking-card_item mb-0 fs-32">01</h5>
                                             <div class="country ranking-card_item d-flex align-items-center">
                                                 <figure class="mb-0">
-                                                    <img src="./images/brazil.png" alt="">
+                                                    <img src="./images/brazil.png" alt="img">
                                                 </figure>
-                                                <h5 class="rank-card_item mb-0">Argentina</h5>
-                                                <div class="score ranking-card_item">+3</div>
+                                                <h5 class="rank-card_item mb-0">Brazil</h5>
+                                                <div class="score ranking-card_item negative">-3</div>
                                             </div>
                                             <div class="points ranking-card_item"><span>1883.5</span></div>
                                             <div class="points ranking-card_item"><span>1883.5</span></div>
@@ -892,10 +979,10 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter1.png" alt="">
+                                            <img src="./images/twitter1.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -909,13 +996,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter2.png" alt="">
+                                            <img src="./images/twitter2.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -929,13 +1016,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter3.png" alt="">
+                                            <img src="./images/twitter3.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -949,13 +1036,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter1.png" alt="">
+                                            <img src="./images/twitter1.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -969,13 +1056,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter2.png" alt="">
+                                            <img src="./images/twitter2.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -989,13 +1076,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter3.png" alt="">
+                                            <img src="./images/twitter3.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -1009,13 +1096,13 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="twitter-card">
+                                <a href="#" class="twitter-card">
                                     <div class="twitter-card_img">
                                         <figure class="mb-4 ratio">
-                                            <img src="./images/twitter1.png" alt="">
+                                            <img src="./images/twitter1.png" alt="img">
                                             <div class="twitter">
                                                 <span class="icon-x"></span>
 
@@ -1029,7 +1116,7 @@
                                             match! 🔥🇶🇦 <span class="d-block">#Our_Journey_To2026</span></p>
                                         <div class="time fs-18">1 Aug 2023</div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1045,59 +1132,77 @@
                 </nav>
                 <div class="d-flex align-items-center justify-content-between">
                     <h4 class="h2 stroke-text mb-0 "> IMAGES <span> VIDEOS</span></h4>
-                    <a href="" class="viewall">View all</a>
+                    <a href="#" class="viewall" id="viewall">View all</a>
                 </div>
                 <div class="media_wrap d-flex">
                     <figure class="mb-0">
-                        <img src="./images/1.png" alt="">
+                        <img src="./images/1.png" alt="img">
                     </figure>
                     <figure class="mb-0">
-                        <img src="./images/2.png" alt="">
+                        <img src="./images/2.png" alt="img">
                     </figure>
                     <figure class="mb-0">
-                        <img src="./images/3.png" alt="">
-                        <img src="./images/4.png" alt="">
+                        <img src="./images/3.png" alt="img">
+                        <img src="./images/4.png" alt="img">
 
                     </figure>
                     <figure class="mb-0">
-                        <img src="./images/26.png" alt="">
+                        <img src="./images/26.png" alt="img">
                     </figure>
                     <figure class="mb-0">
-                        <img src="./images/14.png" alt="">
+                        <img src="./images/14.png" alt="img">
                     </figure>
                     
                 </div>
                 <div class="media_wrap d-flex">
 
                 <figure class="mb-0">
-                    <img src="./images/7.png" alt="">
+                    <img src="./images/7.png" alt="img">
                 </figure>
                 <figure class="mb-0">
-                    <img src="./images/8.png" alt="">
+                    <img src="./images/8.png" alt="img">
                 </figure>
                 <figure class="mb-0">
-                    <img src="./images/9.png" alt="">
+                    <img src="./images/9.png" alt="img">
 
                 </figure>
                 <figure class="mb-0">
-                    <img src="./images/1o.png" alt="">
+                    <img src="./images/1o.png" alt="img">
                 </figure>
                 <figure class="mb-0">
-                    <img src="./images/12.png" alt="">
-                    <img src="./images/13.png" alt="">
+                    <img src="./images/12.png" alt="img">
+                    <img src="./images/13.png" alt="img">
 
                 </figure>
                 </div>
+                <div class="media_wrap d-flex hidden-section" style="display: none;">
+                    <figure class="mb-0">
+                        <img src="./images/1.png" alt="img">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/2.png" alt="img">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/3.png" alt="img">
+                        <img src="./images/4.png" alt="img">
+
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/26.png" alt="img">
+                    </figure>
+                    <figure class="mb-0">
+                        <img src="./images/14.png" alt="img">
+                    </figure>
+                    
+                </div>
                 
             </div>
-            </div>
         </section>
-    </div>
     <footer class="footer">
         
             <div class="footer-top position-relative">
                 <figure class="mb-0 position-absolute footer-bg ratio">
-                    <img src="./images/footer-football.png" alt="">
+                    <img src="./images/footer-football.png" alt="img">
                 </figure>
                 <div class="container">
 
@@ -1147,15 +1252,15 @@
                                             <a class="fs-18" href="">Home</a>
                                         </li>
                                         <li>
-                                            <a href="" class="fs-18">Competitions</a>
+                                            <a href="#" class="fs-18">Competitions</a>
                                         </li>
                                         <li>
-                                            <a href="" class="fs-18">
+                                            <a href="#" class="fs-18">
                                                 Football in Qatar
                                             </a>
                                         </li>
-                                        <li><a href="" class="fs-18">About us</a></li>
-                                        <li><a href="" class="fs-18">Careers</a></li>
+                                        <li><a href="#" class="fs-18">About us</a></li>
+                                        <li><a href="#" class="fs-18">Careers</a></li>
                                     </ul>
 
                                 </div>
@@ -1181,10 +1286,10 @@
                                             <a class="fs-18" href="">Terms of Use</a>
                                         </li>
                                         <li>
-                                            <a href="" class="fs-18">Privacy Policy</a>
+                                            <a href="#" class="fs-18">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="" class="fs-18">
+                                            <a href="#" class="fs-18">
                                                 Sitemap
                                             </a>
                                         </li>
@@ -1221,49 +1326,49 @@
                 <div class="row flex-wrap justify-content-center footer-bottom_wrap align-items-center">
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/qib.svg" alt="">
+                            <img src="./images/qib.svg" alt="img">
                         </figure>
                         <p>Official Bank</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/1.svg" alt="">
+                            <img src="./images/1.svg" alt="img">
                         </figure>
                         <p>Official Energy Partner</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/qa.png" alt="">
+                            <img src="./images/qa.png" alt="img">
                         </figure>
                         <p>Official Carrier</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/4.svg" alt="">
+                            <img src="./images/4.svg" alt="img">
                         </figure>
                         <p>Official Broadcaster Partner</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/5.svg" alt="">
+                            <img src="./images/5.svg" alt="img">
                         </figure>
                         <p>Official Telecommunication Partner</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/6.svg" alt="">
+                            <img src="./images/6.svg" alt="img">
                         </figure>
                         <p>Official Mobility Partner</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/7.svg" alt="">
+                            <img src="./images/7.svg" alt="img">
                         </figure>
                         <p>Official Delivery Partner</p>
                     </div>
                     <div class="col bottom-col">
                         <figure>
-                            <img src="./images/8.svg" alt="">
+                            <img src="./images/8.svg" alt="img">
                         </figure>
                         <p>Official Branding Partner</p>
                     </div>

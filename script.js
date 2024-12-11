@@ -80,3 +80,21 @@ var swiper = new Swiper(".matchSwiper", {
       prevEl: ".swiper-3-prev",
     },
   });
+  document.addEventListener('DOMContentLoaded',function(){
+    const viewAllButton = document.getElementById('viewall');
+    const hiddenSection = document.querySelector('.hidden-section');
+    viewAllButton.addEventListener('click',function(event){
+      event.preventDefault();
+      hiddenSection.classList.toggle('show');
+      this.textContent = hiddenSection.classList.contains('show') ? 'View less' : 'View all';
+    })
+  })
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const langSwitcher = document.getElementById('langSwitcher');
+    langSwitcher.addEventListener('click', function () {
+        const langText = document.getElementById('langText');
+        langText.textContent = langText.textContent === 'AR' ? 'EN' : 'AR';
+    });
+});
+

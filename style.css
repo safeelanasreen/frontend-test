@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  --frontendtest-header-height:174.66px;
 }
 
 body {
@@ -17,7 +16,17 @@ body {
 
 .main {
   min-height: 100vh;
-  padding-top: var(--frontendtest-header-height);
+  padding-top: 214px;
+}
+@media screen and (min-width: 500px) {
+  .main {
+    padding-top: 155px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    padding-top: 174.66px;
+  }
 }
 
 a {
@@ -311,6 +320,35 @@ ul li {
   }
 }
 
+.offcanvas {
+  background-color: #2F1A45;
+}
+.offcanvas button {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.offcanvas-body ul li {
+  margin-bottom: 10px;
+}
+.offcanvas-body ul li a {
+  font-family: "ClanOT-NarrowBold";
+  font-size: 16px;
+  line-height: 1.4;
+}
+.offcanvas-body ul li ul {
+  margin-top: 15px;
+}
+.offcanvas-body ul li ul li {
+  margin-bottom: 5px;
+}
+.offcanvas-body ul li ul li a {
+  font-family: "ClanOT-NarrowBook";
+}
+.offcanvas-body ul li ul li:last-child {
+  margin-bottom: 15px;
+}
+
 .header {
   background-color: #2F1A45;
   width: 100vw;
@@ -591,6 +629,10 @@ ul li {
             column-gap: 2.625rem;
   }
 }
+.banner_bottom .play_icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
 .banner_bottom .banner_item {
   color: #fff;
 }
@@ -605,6 +647,14 @@ ul li {
 @media screen and (min-width: 1200px) {
   .banner_bottom .banner_item:hover .bottom_icon {
     background-color: #fff;
+  }
+  .banner_bottom .banner_item:hover .banner-icon {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .banner_bottom .banner_item:hover .play_icon.play_icon {
+    -webkit-filter: invert(0);
+            filter: invert(0);
   }
 }
 .banner_bottom .banner-icon {
@@ -965,11 +1015,35 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 2px;
+     -moz-column-gap: 2px;
+          column-gap: 2px;
 }
 .football-ranking .tab-content_wrap .ranking-card_item:last-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 24%;
           flex: 0 0 24%;
+}
+.football-ranking .tab-content_wrap .ranking-card_item .item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #8C0321;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.football-ranking .tab-content_wrap .ranking-card_item .item:first-child {
+  background-color: #15AA9C;
+}
+.football-ranking .tab-content_wrap .ranking-card_item .item span {
+  color: #fff;
 }
 .football-ranking .tab-content_wrap .ranking-card .country {
   -webkit-column-gap: 15px;
@@ -1015,6 +1089,15 @@ ul li {
   border-bottom: 12px solid #15AA9C;
   content: "";
 }
+.football-ranking .tab-content_wrap .ranking-card .score.negative {
+  color: #8C0321;
+}
+.football-ranking .tab-content_wrap .ranking-card .score.negative::before {
+  border-bottom: 12px solid #8C0321;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 12px;
+}
 
 .twitter-feeds {
   border-top: 1px solid #C1BAC7;
@@ -1023,13 +1106,19 @@ ul li {
 .twitter-feeds .swiper-area .swiper-button-next, .twitter-feeds .swiper-area .swiper-button-prev {
   top: 0;
 }
+.twitter-feeds .twitter-card {
+  color: #000;
+}
 .twitter-feeds .twitter-card_img {
   overflow: hidden;
   --bs-aspect-ratio:59%;
+  border-radius: 12px;
 }
 .twitter-feeds .twitter-card_img img {
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .twitter-feeds .twitter-card_img .twitter {
   width: 48px;
@@ -1058,9 +1147,37 @@ ul li {
 .twitter-feeds .twitter-card .time {
   color: #899AA0;
 }
+@media screen and (min-width: 1200px) {
+  .twitter-feeds .twitter-card:hover figure img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
 
 .media {
-  padding: 2.5rem 0 7.5rem 0;
+  padding: 2.5rem 0 2.5rem 0;
+}
+@media screen and (min-width: 1200px) {
+  .media {
+    padding-bottom: 2.5rem;
+  }
+}
+.media_wrap {
+  padding-top: 3.125rem;
+}
+@media screen and (max-width: 578px) {
+  .media_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.media_wrap.hidden-section {
+  display: none !important;
+}
+.media_wrap.hidden-section.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .media_wrap figure {
   overflow: hidden;
@@ -1072,6 +1189,13 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 578px) {
+  .media_wrap figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
 }
 .media_wrap figure img {
   border-radius: 12px;
@@ -1117,7 +1241,12 @@ ul li {
   width: 100%;
 }
 .footer_social {
-  padding-top: 40px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer_social {
+    padding-top: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer_social {
@@ -1148,7 +1277,12 @@ ul li {
           justify-content: center;
 }
 .footer-right {
-  padding: 40px;
+  padding: 20px 0;
+}
+@media screen and (min-width: 992px) {
+  .footer-right {
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-right {
@@ -1175,6 +1309,12 @@ ul li {
   width: 250%;
   height: 1px;
   background-color: #6D5F7D;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer .border-col:first-child:after {
+    display: block;
+  }
 }
 .footer .border-col:before {
   position: absolute;
@@ -1184,6 +1324,12 @@ ul li {
   width: 1px;
   height: 250%;
   background-color: #6D5F7D;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer .border-col:before {
+    display: block;
+  }
 }
 .footer-bottom {
   padding: 4.5rem 0;
@@ -1213,6 +1359,13 @@ ul li {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+@media screen and (max-width: 578px) {
+  .footer-bottom .footer-bottom_wrap .bottom-col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 .footer-bottom .footer-bottom_wrap .bottom-col figure img {
   -o-object-fit: contain;

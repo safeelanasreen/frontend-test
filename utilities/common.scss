@@ -4,7 +4,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    --frontendtest-header-height:174.66px;
+  
     
 }
 body{
@@ -17,7 +17,16 @@ body{
 }
 .main{
     min-height: 100vh;
-    padding-top: var(--frontendtest-header-height);
+    padding-top: 214px;
+    @include min(500){
+        padding-top: 155px;
+   
+       }
+    
+    @include min(1200){
+        padding-top:174.66px;
+    
+    }
 }
 a{
     text-decoration: none;
@@ -287,5 +296,35 @@ ul{
     }
     @include min(1600){
         font-size: size(32);
+    }
+}
+.offcanvas{
+    background-color: $primary-color;
+    button{
+        filter: invert(1);
+    }
+}
+.offcanvas-body{
+    ul{
+        li{
+        margin-bottom: 10px;
+            a{
+                font-family: $font-family-bold;
+                font-size: 16px;
+               line-height: 1.4;
+            }
+            ul{
+                margin-top: 15px;
+                li{
+                    margin-bottom: 5px;
+                    a{
+                        font-family: $font-family-normal;
+                    }
+                    &:last-child{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -307,6 +307,9 @@
             column-gap: size(42);
 
         }
+        .play_icon{
+            filter: invert(1);
+        } 
         .banner_item{
 
             color: $white;
@@ -315,12 +318,19 @@
                 height: 40px;
                 border-radius: 50%;
     border: 1px solid $white; 
-    transition: all 0.2s ease-in-out;     
+    transition: all 0.2s ease-in-out;
+       
       }
             &:hover{
                 @include min(1200){
                     .bottom_icon{
                         background-color: $white;
+                    }
+                    .banner-icon{
+                        filter: invert(1);
+                    }
+                    .play_icon.play_icon{
+                        filter: invert(0);
                     }
                 }
             }
@@ -695,10 +705,25 @@
                 flex: 0 0 18%;
                 display: flex;
                 justify-content: center;
+                column-gap: 2px;
                 &:last-child{
                     flex: 0 0 24%;
                 }
-               
+               .item{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: $red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:first-child{
+                    background-color: #15AA9C;
+                }
+                span{
+                    color:$white;
+                }
+               }
             }
             .country{
                 column-gap: 15px;
@@ -741,6 +766,15 @@
 	border-bottom: 12px solid #15AA9C;
     content: "";
                 }
+                &.negative{
+                    color:$red;
+                    &::before{
+                        border-bottom: 12px solid $red;
+                        transform: rotate(180deg);
+                        top: 12px;
+
+                    }
+                }
             }
         }
     }
@@ -755,12 +789,15 @@
         }
     }
     .twitter-card{
+        color: $black;
         
         &_img{
             overflow: hidden;
             --bs-aspect-ratio:59%;
+            border-radius: 12px;
             img{
                 object-fit: contain;
+                transition: all 0.3s ease-in-out;
             }
            
             .twitter{
@@ -786,13 +823,37 @@
         .time{
             color: #899AA0;
         }
+        &:hover{
+            @include min(1200){
+                figure{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
     }
 }
 // media section
 
 .media{
-    padding: size(40) 0 size(120) 0;
+    padding: size(40) 0 size(40) 0;
+    @include min(1200){
+        padding-bottom: size(40);
+    }
     &_wrap{
+        @include max(578){
+            flex-wrap: wrap;
+
+        }
+        padding-top: size(50);
+        &.hidden-section{
+            display: none !important;
+            &.show{
+                display: flex!important;
+            }
+        }
+        
        
 
         figure{
@@ -800,6 +861,9 @@
             border-radius: 12px;
             display: flex;
             flex-direction: column;
+            @include max(578){
+                flex: 0 0 50%;
+            }
            
 
             img{
@@ -848,7 +912,11 @@
     width: 100%;
 }
 &_social{
-    padding-top: 40px;
+    padding-top: 20px;
+    @include min(768){
+        padding-top: 40px;
+
+    }
     @include min(1200){
         padding-top: size(86);
 
@@ -872,7 +940,11 @@
     }
 }
 &-right{
-padding: 40px;   
+    padding: 20px 0;
+    @include min(992){
+        padding: 40px ;   
+
+    }
  @include min(1200){
         padding: size(80) size(80) size(36) size(80);
 
@@ -900,6 +972,10 @@ padding: 40px;
             width: 250%;
             height: 1px;
             background-color: #6D5F7D;
+            display: none;
+            @include min(768){
+                display: block;
+            }
         }
     }
     &:before{
@@ -910,6 +986,10 @@ padding: 40px;
         width: 1px;
         height: 250%;
         background-color: #6D5F7D;
+        display: none;
+            @include min(768){
+                display: block;
+            }
     }
     
 }
@@ -930,6 +1010,9 @@ padding: 40px;
             flex-direction: column;
             align-items: center;
             max-width: fit-content;
+            @include max(578){
+                flex: 0 0 100%;
+            }
             figure{
                 img{
                     object-fit: contain;
