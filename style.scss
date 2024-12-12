@@ -113,14 +113,17 @@
             position: relative;
             .ticket-text{
                 position: absolute;
-                right: 9px;
+                right: 17px;
                 top: 50%;
                 transform: translateY(-50%);
                 color: $black;
                 font-family: $font-family-bold;
-                font-size: size(16);
+                font-size:14px;
+		    @include min(576){
+			         font-size: size(16);
+		    }
                 @include min(1600){
-                    font-size: size(18);
+                    font-size: size(17);
 
                 }
             }
