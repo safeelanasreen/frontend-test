@@ -267,7 +267,7 @@ ul li {
 }
 .match-card-outer .ticket figure .ticket-text {
   position: absolute;
-  right: 17px;
+  right: 16px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
