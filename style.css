@@ -976,7 +976,9 @@ ul li {
   }
 }
 @media screen and (man-width: 576px) {
+  .football-ranking .tab-content_wrap .tab-content_top {
     overflow-x: scroll;
+  }
 }
 .football-ranking .tab-content_wrap .tab-content_top .top-item {
   padding: 15px;
