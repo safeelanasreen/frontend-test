@@ -1020,11 +1020,12 @@ ul li {
   margin-bottom: 8px;
   
   font-family: "ClanOT-NarrowBold";
+
+}
   @media screen and (max-width: 576px) {
   .football-ranking .tab-content_wrap .ranking-card {
     overflow-x: scroll;
   }
-}
 }
 @media screen and (min-width: 1400px) {
   .football-ranking .tab-content_wrap .ranking-card {
