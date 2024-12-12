@@ -249,6 +249,10 @@
         position: absolute;
         right: 5%;
         top: 24px;
+	      @include min(1200){
+        right:52px;
+
+    }
         .social_wrap{
             width: 36px;
             height: 36px;
