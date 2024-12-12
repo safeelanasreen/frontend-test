@@ -121,6 +121,7 @@
                 font-size:14px;
 		    @include min(576){
 			         font-size: size(16);
+			    right:9px;
 		    }
                 @include min(1600){
                     font-size: size(17);
