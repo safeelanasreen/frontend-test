@@ -275,17 +275,12 @@ ul li {
   font-family: "ClanOT-NarrowBold";
   font-size: 14px;
 }
-@media screen and (min-width: 576px) {
-   .match-card-outer .ticket figure .ticket-text {
-        font-size: 1rem;
-       right: 9px;
-   }
-}
-@media screen and (min-width: 1600px) {
+
+/* @media screen and (min-width: 1600px) {
   .match-card-outer .ticket figure .ticket-text {
     font-size: 1.125rem;
   }
-}
+} */
 .match-card-outer .ticket figure img {
   -o-object-fit: contain;
      object-fit: contain;
