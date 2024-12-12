@@ -1,10 +1,26 @@
 const marqueeWrap = document.querySelector('.marquee_wrap');
 const originalContent = marqueeWrap.innerHTML;
 
-
 while (marqueeWrap.scrollWidth < window.innerWidth * 2) {
     marqueeWrap.innerHTML += originalContent;
 }
+
+
+let position = -marqueeWrap.scrollWidth / 2;
+
+const speed = 2;
+
+
+function animateMarquee() {
+    position += speed; 
+    if (position >= 0) {
+        position = -marqueeWrap.scrollWidth / 2; 
+    }
+    marqueeWrap.style.transform = `translateX(${position}px)`; 
+}
+
+
+animateMarquee();
 var swiper = new Swiper(".matchSwiper", {
     slidesPerView: 1,
       spaceBetween: 30,
