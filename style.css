@@ -1186,12 +1186,12 @@ ul li {
 }
 @media screen and (min-width: 1200px) {
   .media {
-    padding-bottom: 2.5rem;
+/*     padding-bottom: 2.5rem; */
   }
 }
-.media_wrap {
+/* .media_wrap {
   padding-top: 3.125rem;
-}
+} */
 @media screen and (max-width: 578px) {
   .media_wrap {
     -ms-flex-wrap: wrap;
