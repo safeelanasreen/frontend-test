@@ -555,6 +555,11 @@ ul li {
 }
 @media screen and (min-width: 1200px) {
   .banner_social_icons {
+      right: 102px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner_social_icons {
       right: 52px;
   }
 }
