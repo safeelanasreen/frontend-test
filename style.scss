@@ -250,6 +250,10 @@
         right: 5%;
         top: 24px;
 	      @include min(1200){
+        right:102px;
+
+    }
+	         @include min(1400){
         right:52px;
 
     }
