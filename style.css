@@ -819,6 +819,7 @@ ul li {
 .news-card_ttl {
   font-family: "ClanOT-NarrowBold";
   margin-bottom: 24px;
+  line-height:1.4;
 }
 .news-card .btn_wrap {
   -webkit-column-gap: 5px;
