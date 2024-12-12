@@ -666,12 +666,15 @@
             border-top-right-radius: 32px;
             margin-top: -5px;
             position: relative;
-            overflow-x: scroll;
+      
             font-family: $font-family-bold;
             @include min(1200){
                 margin-top: -5px;
 
             }
+		     @include max(576){
+                overflow-x: scroll;
+        }
 
             .top-item{
                 // text-align: center;
