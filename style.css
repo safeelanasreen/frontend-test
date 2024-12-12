@@ -553,6 +553,11 @@ ul li {
   right: 5%;
   top: 24px;
 }
+@media screen and (min-width: 1200px) {
+  .banner_social_icons {
+      right: 52px;
+  }
+}
 .banner_social_icons .social_wrap {
   width: 36px;
   height: 36px;
