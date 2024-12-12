@@ -967,13 +967,16 @@ ul li {
   border-top-right-radius: 32px;
   margin-top: -5px;
   position: relative;
-  overflow-x: scroll;
+
   font-family: "ClanOT-NarrowBold";
 }
 @media screen and (min-width: 1200px) {
   .football-ranking .tab-content_wrap .tab-content_top {
     margin-top: -5px;
   }
+}
+@media screen and (man-width: 576px) {
+    overflow-x: scroll;
 }
 .football-ranking .tab-content_wrap .tab-content_top .top-item {
   padding: 15px;
