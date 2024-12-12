@@ -267,13 +267,19 @@ ul li {
 }
 .match-card-outer .ticket figure .ticket-text {
   position: absolute;
-  right: 9px;
+  right: 17px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #000;
   font-family: "ClanOT-NarrowBold";
-  font-size: 1rem;
+  font-size: 14px;
+}
+@media screen and (min-width: 576px) {
+   .match-card-outer .ticket figure .ticket-text {
+        font-size: 1rem;
+       right: 9px;
+   }
 }
 @media screen and (min-width: 1600px) {
   .match-card-outer .ticket figure .ticket-text {
