@@ -707,8 +707,11 @@
             border-radius: 12px;
             padding: 15px 0;
             margin-bottom: 8px;
-            overflow-x: scroll;
+         
             font-family: $font-family-bold;
+		     @include max(576){
+                overflow-x: scroll;
+        }
             @include min(1400){
                 padding: size(29) 0;
 
